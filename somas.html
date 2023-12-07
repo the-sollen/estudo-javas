@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Trabalhando com Dados v2.0</h1>
+        <p id="resultado">aqui vai aparecer o resultado...</p>
+        <button onclick="incio()">click me</button>
+    </section>
+    <script>
+        function incio(){
+            let nome = window.alert('soma de numeros!');
+            let numero1 = window.prompt("digite o primeiro número");
+            let numero2 = window.prompt("digite o segundo número");
+            let soma = parseInt (numero1) + parseInt (numero2);
+            let res = window.document.getElementById('resultado');
+            res.innerHTML = "o resultado da soma de "+numero1+" e "+numero2+" foi: "+soma;
+            //
+            // pesquise o significado de cada coisa na linha 18..
+        }
+    </script>
+</body>
+</html>
